@@ -44,4 +44,6 @@ Thumbs.db
 # VSCODE
 .vscode/
 .editorconfig
+
+# CACHE
 .angular/
