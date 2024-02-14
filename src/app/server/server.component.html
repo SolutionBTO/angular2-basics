@@ -1,0 +1,13 @@
+<div class="container-fluid">
+        <div class="row">
+                <div class="col-md-6">
+                        <div class="text-center">&nbsp;&nbsp;Server: {{id}} - Status: {{status}}</div>
+                </div>
+                <div class="col-md-3 col-md-offset-3">
+                        <button class="btn btn-primary" 
+                                (click)="onAlertEvent('Its a server: '+id)"
+                                data-toggle="modal" data-target="#modalSample">TEST</button> 
+                </div>
+        </div>
+</div>
+

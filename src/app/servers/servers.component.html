@@ -1,0 +1,18 @@
+<h3>&nbsp;Servers Component</h3>
+<button class="btn btn-primary" id="addServer" [disabled]="disabledBtnServer">Add Server</button>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <app-server [id]="'Server 1'" [status]="'UP'" (onAlert)="alerta($event)"></app-server>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-server [id]="'Server 2'" [status]="'DOWN'" (onAlert)="alerta($event)"></app-server>
+        </div>
+    </div>    
+    <hr>
+</div>
+  
+ <app-modal #appModal [message]="message"></app-modal>
