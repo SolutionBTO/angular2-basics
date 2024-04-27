@@ -7,7 +7,7 @@ import { Component } from "@angular/core";
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-        This is a warning alert—check it out!
+        <div id="messageWarning">{{textContent}}</div>
     </div>
     `,
     styles: [`
@@ -18,5 +18,5 @@ import { Component } from "@angular/core";
 
 })
 export class WarningAlertComponent{
-
+    textContent : string = "This is a warning alert—check it out!";
 }
